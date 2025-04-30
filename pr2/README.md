@@ -6,6 +6,7 @@
 Далее был реализован модуль MultiActivity. В первой активности сделал editText и кнопку "отправить". После нажатия на эту кнопку введенный текст переносится на textView второй активности.
 ![image](https://github.com/user-attachments/assets/65ac6b1e-4649-427d-a3de-c4d59b59f4f3)
 ![image](https://github.com/user-attachments/assets/99b706c3-163e-46c9-862b-b34842c228a0)
+
 После нажатия на кнопку "отправить" вызываются методы onPause(), onStart() onResume(). Если нажать на кнопку "назад", то для второй активности в конце вызовется onDestroy()
 ![image](https://github.com/user-attachments/assets/940296a3-a139-459c-a6ad-4685e33be0b4)
 
@@ -16,6 +17,43 @@
 
 Первый модуль с уведомлениями - ToastApp. В методе onShowToastClick прописал toast-уведомление с моим номером и группой, а также кол-вом символов.
 ![image](https://github.com/user-attachments/assets/8ee863b5-50c6-43a9-9632-f1789f63c416)
+
+NotificationApp. В манифест было вписано разрешение на уведомления. При запуске приложение запрашивает разрешение на уведомления. Проверка на разрешение идет в методе CheclSelfPermission(). Если доступ не дан, то идет запрос разрешения.
+![image](https://github.com/user-attachments/assets/c30f6327-646c-4d47-aed6-26c2d9394406)
+
+При нажатии на кнопку "отправить уведомление" уведомление отправляется. Если текста мало, то уведомление небольшое.
+![image](https://github.com/user-attachments/assets/73b357a1-01a8-4413-a091-e9338a055f50)
+
+Если текста сильно много, то уведомление раскрывается и там он уже отображается в больших колчиествах. Реализовано через BigTextStyle()
+![image](https://github.com/user-attachments/assets/447baacf-7ac6-4992-a788-e6d3f80e2b6f)
+
+Канал для уведомлений называется "основной канал" теперь, а не "ФИО-уведомление", как на прошлых скринах.
+![image](https://github.com/user-attachments/assets/9f7f860e-7deb-415a-93c9-fe55941457e3)
+![image](https://github.com/user-attachments/assets/394db9f9-73a3-4fe1-b241-b6a7b4f3db42)
+
+Dialog. По нажатию на кнопку вызывается диалоговое окно с тремя опциями. После нажатия на любую из них высвечивается toast-уведомление с выбранной опцией. Все настройки диалогового окна идут в объекте класса AlertDialog.Builder.
+![image](https://github.com/user-attachments/assets/37328f74-a0b2-4dd7-9b64-385eeb22da22)
+![image](https://github.com/user-attachments/assets/87aefc64-4961-4f53-add3-354c5610bf84)
+
+В конце еще самостоятельное задание. Добавил 3 кнопки: "время", "дата", "прогресс".
+![image](https://github.com/user-attachments/assets/27c077b1-2f78-4c8a-8598-3cad09b3c1ac)
+
+Время реализовано через класс Calendar и метод TimePickerDialog(). После выбора времени высвечивается toast с выбранным вреиенем.
+![image](https://github.com/user-attachments/assets/12c65dd0-e86b-4512-83c1-82d1a5a0f76b)
+
+Дата сделана таким же образом, только теперь используется метод DatePickerDialog().
+![image](https://github.com/user-attachments/assets/f5ce512d-9992-43b2-b0b2-0c49fa9f8a62)
+
+Для загрузки использован класс ProgressBar с бесконечной анимацией прокрутки. Чтобы выйти из загрузки достаточно нажать на любое место экрана, ведь .setCancelable установлен на true.
+![image](https://github.com/user-attachments/assets/17646e55-38ca-4bdf-9af9-c7c229faedb3)
+
+
+
+
+
+
+
+
 
 
 

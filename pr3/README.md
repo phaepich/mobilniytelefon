@@ -4,6 +4,6 @@
 
 fdgdfgа
 
-![image.png](image.png)
+![readme_images/image.png](image.png)
 
 авпп

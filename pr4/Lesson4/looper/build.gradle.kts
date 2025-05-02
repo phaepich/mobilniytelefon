@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "ru.mirea.popov.data_thread"
+    namespace = "ru.mirea.popov.looper"
     compileSdk = 35
     buildFeatures {
         viewBinding = true
     }
     defaultConfig {
-        applicationId = "ru.mirea.popov.data_thread"
+        applicationId = "ru.mirea.popov.looper"
         minSdk = 35
         targetSdk = 35
         versionCode = 1

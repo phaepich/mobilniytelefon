@@ -17,7 +17,8 @@ public class SecondActivity extends AppCompatActivity {
 
         int number = 22;
         int square = number * number;
-        String text = "КВАДРАТ ЗНАЧЕНИЯ МОЕГО НОМЕРА ПО СПИСКУ СОСТАВЛЯЕТ " + square + ", а текущее время " + time;
+        String text = "КВАДРАТ ЗНАЧЕНИЯ МОЕГО НОМЕРА ПО СПИСКУ СОСТАВЛЯЕТ " + square + "" +
+                ", а текущее время " + time;
         textView.setText(text);
     }
 }

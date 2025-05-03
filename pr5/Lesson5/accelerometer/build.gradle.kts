@@ -3,11 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "ru.mirea.popov.lesson5"
+    namespace = "ru.mirea.popov.accelerometer"
     compileSdk = 35
-
+    buildFeatures{
+        viewBinding = true
+    }
     defaultConfig {
-        applicationId = "ru.mirea.popov.lesson5"
+        applicationId = "ru.mirea.popov.accelerometer"
         minSdk = 35
         targetSdk = 35
         versionCode = 1
@@ -32,7 +34,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "Lesson5"
 include(":sensorlist")
 include(":accelerometer")
+include(":camera")

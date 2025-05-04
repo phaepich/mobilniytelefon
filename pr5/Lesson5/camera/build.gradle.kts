@@ -5,7 +5,9 @@ plugins {
 android {
     namespace = "ru.mirea.popov.camera"
     compileSdk = 35
-
+    buildFeatures{
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "ru.mirea.popov.camera"
         minSdk = 35

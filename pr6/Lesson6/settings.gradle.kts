@@ -21,4 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "Lesson6"
 include(":SharedPreferencesApp")
- 
+include(":securesharedpreferences")
+include(":internalfilestorage")
+include(":notebook")
+include(":employeedb")

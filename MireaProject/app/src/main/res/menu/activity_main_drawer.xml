@@ -29,6 +29,23 @@
             android:id="@+id/nav_practice"
             android:icon="@drawable/side_nav_bar"
             android:title="Опыт практики" />
+        <item
+            android:id="@+id/nav_permission"
+            android:icon="@drawable/side_nav_bar"
+            android:title="Запрос разрешений" />
+        <item
+            android:id="@+id/nav_sensor_north"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Компас" />
+        <item
+            android:id="@+id/nav_camera_note"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Фото-заметка" />
+        <item
+            android:id="@+id/nav_mic_task"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Голосовая заметка" />
+
 
     </group>
 </menu>

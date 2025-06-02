@@ -68,6 +68,11 @@
         android:name="ru.mirea.popov.mireaproject.FileFragment"
         android:label="Файлы"
         tools:layout="@layout/fragment_file" />
+    <fragment
+        android:id="@+id/nav_network"
+        android:name="ru.mirea.popov.mireaproject.NetworkFragment"
+        android:label="Сеть"
+        tools:layout="@layout/fragment_network" />
 
 
 
